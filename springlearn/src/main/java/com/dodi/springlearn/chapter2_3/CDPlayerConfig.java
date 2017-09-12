@@ -17,4 +17,10 @@ public class CDPlayerConfig {
 		return new SegPeppers();
 	}
 	
+	@Bean
+	// 在JavaConfig中装配bean的最简单的方法就是引用创建bean的方法
+	public CDPlayer cdPlayer(){
+		return new CDPlayer(sgtPeppers());
+	}
+	
 }
