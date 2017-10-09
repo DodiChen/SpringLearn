@@ -1,5 +1,8 @@
 package com.dodi.springlearn.chapter3_5;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class BlankDisc implements CompactDisc {
 
 	private String title;
